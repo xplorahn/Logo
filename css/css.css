@@ -2,9 +2,15 @@ body {
   background: linear-gradient(-45deg, #FBAE17 0%, #679418 36.32%, #88A80D 71.27%, #ECAC17 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  margin-bottom: 0px;
-    width: 90%;
-    height: 592px;
+  margin:0;
+  padding: 0;
+}
 
-
+#guacamayo{
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
