@@ -1,16 +1,42 @@
-body {
-  background: linear-gradient(-45deg, #FBAE17 0%, #679418 36.32%, #88A80D 71.27%, #ECAC17 100%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  margin:0;
-  padding: 0;
-}
-
-#guacamayo{
-  position: absolute;
-  margin: 0;
-  top: 50%;
+@@ -13,4 +13,41 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
